@@ -1,21 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
-
     <f:view contentType="text/html">
         <h:head>
             <title>Inscription</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </h:head>
-
         <h:body>
-
             <h:form id="form">
 
-                <h3>Multiple Selection</h3>
+                <h3>Enregistrement d'un nouveau client</h3>
                 <p:accordionPanel multiple="true">
                     <p:tab title="Informations personnelles du client">
                         <h:panelGrid columns="2" cellpadding="10">
@@ -39,8 +41,14 @@
                 </p:accordionPanel>
             </h:form>
 
+            <p:dock position="bottom">
+                <p:menuitem value="Inscription" icon="/resources/icon/ajout.png" url="inscription.xhtml"/>
+                <p:menuitem value="Modification" icon="/resources/icon/modif.jpg" url="#"/>
+                <p:menuitem value="RDV" icon="/resources/icon/RDV.png" url="#"/>
+                <p:menuitem value="Modification RDV" icon="/resources/icon/RDV_modif.png" url="#"/>
+                <p:menuitem value="Client" icon="/resources/icon/visualisation.png" url="#"/>
+                <p:menuitem value="Fille" icon="/resources/icon/fille.png" url="#"/>
+            </p:dock>
         </h:body>
-
     </f:view>
 </html>
-
